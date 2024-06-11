@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Learn Malayalam</title>
+</head>
+<body>
+<h1>Welcome to Learn Malayalam!</h1>
+<p>This website is designed to help you learn the basics of Malayalam, a language spoken by over 40 million people in India.</p>
+<p>We offer a variety of lessons on topics such as grammar, vocabulary, and pronunciation. You can start with the first lesson or jump to any lesson that interests you.</p>
+<p>We hope you enjoy learning Malayalam with us!</p>
+<ul>
+{% for lesson in lessons %}
+<li><a href="/lesson/{{ lesson.number }}">{{ lesson.title }}</a></li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
+
